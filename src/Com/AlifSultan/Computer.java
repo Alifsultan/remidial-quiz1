@@ -12,10 +12,12 @@ package Com.AlifSultan;
 public class Computer {
    private String merk;
    private String type;
+   private String deviceKeComputer;
 
-    public Computer(String merk, String type) {
+    public Computer(String merk, String type, String deviceKeComputer) {
         this.merk = merk;
         this.type = type;
+        this.deviceKeComputer = deviceKeComputer;
     }
 
     public String getMerk() {
@@ -33,10 +35,20 @@ public class Computer {
     public void setType(String type) {
         this.type = type;
     }
+
+    public String getDeviceKeComputer() {
+        return deviceKeComputer;
+    }
+
+    public void setDeviceKeComputer(String deviceKeComputer) {
+    }
+    
+    
     public String info(){
         String info = "";
-        info += "Merk Komputer : "+this.merk+ "\n";
-        info += "Type Komputer  : "+this.type+ "\n";
+        info += "Merk : "+this.merk+ "\n";
+        info += "Type : "+this.type+ "\n";
+        info += " Terhubung... "+this.deviceKeComputer+ "\n";
         return info;
     }
     

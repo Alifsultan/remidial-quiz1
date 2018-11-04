@@ -12,10 +12,12 @@ package Com.AlifSultan;
 class Mouse {
     private String jenisMouse;
     private String merkMouse;
+     private String deviceKeComputer;
 
-    public Mouse(String jenisMouse, String merkMouse) {
+    public Mouse(String jenisMouse, String merkMouse, String deviceKeComputer) {
         this.jenisMouse = jenisMouse;
         this.merkMouse = merkMouse;
+        this.deviceKeComputer = deviceKeComputer;
     }
 
     public String getJenisMouse() {
@@ -33,11 +35,19 @@ class Mouse {
     public void setMerkMouse(String merkMouse) {
         this.merkMouse = merkMouse;
     }
+
+    public String getDeviceKeComputer() {
+        return deviceKeComputer;
+    }
+
+    public void setDeviceKeComputer(String deviceKeComputer) {
+        this.deviceKeComputer = deviceKeComputer;
+    }
     
      public String info(){
         String info = "";
         info += "Jenis Mouse : "+this.jenisMouse+ "\n";
-        info += "Merk Mouse  : "+this.merkMouse+ "\n";
+        info += "Merk Mouse : "+this.merkMouse+ "\n";
         return info;
     }
 }
